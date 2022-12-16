@@ -42,8 +42,9 @@ Building Portfolio Desktop Version using HTML, CSS and Linters
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
+[Portfiolio: Desktop Version](https://eugeneiyukhun.github.io/My-Portfolio-Desktop-Version/)
 
-- [Live Demo Link]- [Eugene Iyukhun](https://www.linkedin.com/in/eugene-iyukhun-bb491612a)
+- [Live Demo Link]- [Eugene Iyukhun](https://eugeneiyukhun.github.io/My-Portfolio-Desktop-Version/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
