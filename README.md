@@ -43,7 +43,7 @@ Building Portfolio Desktop Version using HTML, CSS and Linters
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]- [Eugene Iyukhun](https://www.linkedin.com/in/eugene-iyukhun-bb491612a)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
