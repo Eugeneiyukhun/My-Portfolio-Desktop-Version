@@ -560,3 +560,36 @@ textarea {
     font-weight: 500;
   }
 }
+
+.mobile-menu {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: #2231d2c5;
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.content-mobile-menu {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 80%;
+}
+
+.close-icon {
+  align-self: flex-end;
+}
+
+.font-white h2 {
+  color: #fff;
+}
+
+.d-none {
+  display: none;
+}

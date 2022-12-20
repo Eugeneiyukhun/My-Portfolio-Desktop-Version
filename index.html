@@ -9,15 +9,26 @@
   <script src="main.js" defer></script>
 </head>
 <body>
+  <section class="mobile-menu d-none" id="hamburger-menu">
+    <div class="content-mobile-menu">
+      <div class="close-icon" id="close"><img src="./img/close-icon.svg" alt="" srcset=""></div>
+      <div>
+        <ul class="font-white">
+          <li><a href="http://"><h2>Portfolio</h2></a></li>
+          <li><a href="http://"><h2>Works</h2></a></li>
+          <li><a href="http://"><h2>Contact</h2></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
     <main>
       <header>
         <div class="header-logo">Eugene Iyukhun</div>
         <nav>
-          <div class="header-menu-button">
+          <div class="header-menu-button" id="open">
             <div>Portfolio</div>
             <div>About</div>
             <div>Contact</div>
-          </div>
           </div>
         </nav>
       </header>
