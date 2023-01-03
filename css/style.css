@@ -432,7 +432,7 @@ textarea {
   margin-left: 28px;
 }
 
-.menu-option li {
+.menu-option li a {
   font-weight: 600;
   font-size: 32px;
   color: #fff;
