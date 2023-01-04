@@ -18,8 +18,17 @@
             <div>Contact</div>
           </div>
         </nav>
+       
       </header>
-
+      <nav class="mobile-menu">
+        <div class="close-btn">&times;</div>
+        <ul class="menu-option">
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="overlay"></div>
+      </nav>
       <section class="headline generic-container">
         <h1 class="generic_title">I’m Eugene Glad to see you!</h1>
         <p>
@@ -49,8 +58,8 @@
           </li>
         </ul>
       </section>
-
-      <section class="works-wrapper">
+       <!-- My Portfolio Section -->
+      <section class="works-wrapper" id="portfolio">
         <article class="work-card">
           <div class="work-card_picture">
             <img src="./img/Posts/tonic1.png" alt="Tonic" alt=""/>
@@ -156,7 +165,9 @@
         </article>
       </section>
 
-      <section class="about-myself generic-container">
+
+       <!-- About Section -->
+      <section class="about-myself generic-container" id="about">
         <div class="about-myself_elements">
           <h2 class="generic_title">About Myself</h2>
           <p>
@@ -229,13 +240,14 @@
 
       <section class="contact-form">
         <div class="contact-form__wrapper">
-          <h2 class="contant-form__header">Contact me</h2>
+          <h2 class="contant-form__header" id="contact">Contact me</h2>
           <p class="contact_form__paragraph">
             If you have an application you are interested in developing, a
             feature that you need built or a project that needs coding. I’d love
             to help with it
           </p>
-
+          
+           <!-- My form section -->
           <form
             class="contact_form__form"
             action="https://formspree.io/f/mbjbnawr"
@@ -271,4 +283,5 @@
       </section>
     </main>
 </body>
+<script src="main.js"></script>
 </html>
