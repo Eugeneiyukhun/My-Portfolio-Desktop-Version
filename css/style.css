@@ -191,6 +191,40 @@ textarea {
   padding: 20px 0;
 }
 
+/* Start of project details */
+aside {
+  display: block;
+}
+
+.project-details_technology {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.close-project {
+  display: flex;
+  align-self: flex-end;
+  color: #67798f;
+  font-size:  2rem;
+}
+
+.project-detail_description {
+  display: flex;
+  width: 90%;
+  align-self: flex-end;
+
+}
+.work-card_description {
+  display: flex;
+  
+}
+
+.access-link {
+  display: flex;
+}
 .works-wrapper {
   display: grid;
   grid-template: repeat(4, 1fr) / 1fr;
@@ -406,6 +440,7 @@ textarea {
   margin-top: 32px;
 }
 
+/* Building a mobile-menu for JavaScript design */
 .mobile-menu {
   display: none;
   background-color: #6070ff;
@@ -459,6 +494,7 @@ textarea {
   filter: blur(7.5px);
 }
 
+/* Completed styling of mobile-menu for JavaScript design */
 @media screen and (min-width: 800px) {
   body {
     font-size: 20px;

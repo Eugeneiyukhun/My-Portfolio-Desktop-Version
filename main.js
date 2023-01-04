@@ -1,3 +1,4 @@
+// Beginning of mobile menu open and close buttons
 const mobileMenu = document.querySelector('.mobile-menu');
 const closeBtn = document.querySelector('.close-btn');
 const menuOption = document.querySelector('.menu-option li a');
@@ -21,3 +22,6 @@ const closeMenu = () => {
 openBtn.addEventListener('click', openMenu);
 closeBtn.addEventListener('click', closeMenu);
 menuOption.addEventListener('click', closeMenu);
+// End of mobile-menu open and closed buttons
+
+// popup window
