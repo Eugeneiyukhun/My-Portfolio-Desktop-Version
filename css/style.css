@@ -284,7 +284,8 @@ textarea {
 .work-card_description {
   font-size: 15px;
   line-height: 24px;
-  min-height: 200px;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 .work-card_description p {
@@ -631,6 +632,7 @@ textarea {
 
   .work-card_description {
     font-size: 16px;
+    min-height: 200px;
   }
 
   .about-myself {

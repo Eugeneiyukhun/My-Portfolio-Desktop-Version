@@ -76,7 +76,7 @@ projects.forEach((project) => {
 
   article.innerHTML = `
   <div class="work-card_picture">
-    <img src="img/posts/${project.featuredImage}" alt="Tonic" />
+    <img src="img/Posts/${project.featuredImage}" alt="Tonic" />
   </div>
   <div class="work-card_elements">
     <h3 class="work-card_title">${project.name}</h3>
@@ -112,7 +112,7 @@ projects.forEach((project) => {
       </div>
 
       <div class="work-card_picture">
-        <img src="img/posts/${project.featuredImage}" alt="Multi-Post stories" />
+        <img src="img/Posts/${project.featuredImage}" alt="Multi-Post stories" />
       </div>
 
       <div class="modal_description">
@@ -138,7 +138,6 @@ projects.forEach((project) => {
               <img src="img/purple_github.svg">
             </button>
           </div>
-
         </div>
 
       </div>
