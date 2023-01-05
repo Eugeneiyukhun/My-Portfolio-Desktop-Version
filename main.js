@@ -1,3 +1,4 @@
+// Beginning of mobile menu open and close buttons
 const mobileMenu = document.querySelector('.mobile-menu');
 const closeBtn = document.querySelector('.close-btn');
 const menuOption = document.querySelector('.menu-option li a');
@@ -21,7 +22,22 @@ const closeMenu = () => {
 openBtn.addEventListener('click', openMenu);
 closeBtn.addEventListener('click', closeMenu);
 menuOption.addEventListener('click', closeMenu);
+// End of mobile-menu open and closed buttons
+
 // popup window
+const workCardElements = document.querySelector('.work-card_elements');
+const projectDetailsTechnology = document.querySelector('.project-details_technology');
+const closeProject = document.querySelector('.close-project');
+const workCardSpecs = document.querySelector('.work-card_specs');
+const aside = document.querySelector('aside');
+ 
+const open = () => {
+  aside.style.display = 'block';
+  };
+
+const close = () => {
+  aside.style.display = 'none';
+};
 
 const projects = [
   {

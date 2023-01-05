@@ -191,6 +191,42 @@ textarea {
   padding: 20px 0;
 }
 
+/* Start of project details */
+aside {
+  display: block;
+}
+
+.project-details_technology {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.close-project {
+  display: flex;
+  align-self: flex-end;
+  color: #67798f;
+  font-size: 2rem;
+}
+
+.project-detail_description {
+  display: flex;
+  width: 90%;
+  align-self: flex-end;
+}
+.work-card_description {
+  display: flex;
+}
+
+.access-link {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
 .works-wrapper {
   display: grid;
   grid-template: repeat(4, 1fr) / 1fr;
@@ -239,16 +275,28 @@ textarea {
 }
 
 .work-card_button {
-  margin: 12px 0;
+  border: 1px solid var(--purple);
+  border-radius: 5px;
+  padding: 4px 9px;
+  text-transform: initial;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2px;
+}
+
+.work-card_button img {
+  padding: 0 2px;
 }
 
 .work-card_specs {
-  width: 100%;
+  width: 95%;
   display: flex;
   align-items: center;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
+  margin: 0 auto;
 }
 
 .work-card_specs > .specs_role,
@@ -272,18 +320,22 @@ textarea {
 .work-card_description {
   font-size: 15px;
   line-height: 24px;
+  min-height: 200px;
+}
+
+.work-card_description p {
+  width: 60%;
 }
 
 .work-card_techs {
   display: flex;
-  width: 100%;
-  column-gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
 }
 
 .tag {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   padding: 4px 12px;
   background: var(--tag-background);
   border-radius: 8px;
@@ -292,6 +344,17 @@ textarea {
   color: var(--tag-color);
   letter-spacing: 0.03em;
 }
+
+.featured-img {
+  width: 100%;
+}
+
+.tech-wrapper {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+/* end */
 
 .about-myself {
   border-top-right-radius: 70px;
@@ -406,6 +469,7 @@ textarea {
   margin-top: 32px;
 }
 
+/* Building a mobile-menu for JavaScript design */
 .mobile-menu {
   display: none;
   background-color: #6070ff;
@@ -459,6 +523,7 @@ textarea {
   filter: blur(7.5px);
 }
 
+/* Completed styling of mobile-menu for JavaScript design */
 @media screen and (min-width: 800px) {
   body {
     font-size: 20px;
