@@ -25,3 +25,72 @@ menuOption.addEventListener('click', closeMenu);
 // End of mobile-menu open and closed buttons
 
 // popup window
+const workCardElements = document.querySelector('.work-card_elements');
+const projectDetailsTechnology = document.querySelector('.project-details_technology');
+const closeProject = document.querySelector('.close-project');
+const workCardSpecs = document.querySelector('.work-card_specs');
+const aside = document.querySelector('aside');
+const  
+const open = () => {
+  aside.style.display = 'block';
+  };
+
+const close = () => {
+  aside.style.display = 'none';
+};
+
+const projects = [
+  {
+    id: 1,
+    name: 'Tonic',
+    company: 'Canopy',
+    position: 'Back End Dev',
+    year: '2022',
+    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    featuredImage: 'tonic1.png',
+    technologies: ['html', 'css', 'javaScript'],
+    liveVersion: 'https://eugeneiyukhun.github.io/',
+    source: 'https://github.com/Eugeneiyukhun/My-Portfolio-Desktop-Version/o',
+  },
+  {
+    id: 2,
+    name: 'Multi-Post Stories',
+    company: 'Canopy',
+    position: 'Back End Dev',
+    year: '2022',
+    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    featuredImage: 'multi-post1.png',
+    technologies: ['html', 'css', 'javaScript'],
+    liveVersion: 'https://eugeneiyukhun.github.io/',
+    source: 'https://github.com/Eugeneiyukhun/My-Portfolio-Desktop-Version/o',
+  },
+  {
+    id: 3,
+    name: 'Tonic',
+    company: 'Canopy',
+    position: 'Back End Dev',
+    year: '2022',
+    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    featuredImage: 'tonic2.png',
+    technologies: ['html', 'css', 'javaScript'],
+    liveVersion: 'https://eugeneiyukhun.github.io/',
+    source: 'https://github.com/Eugeneiyukhun/My-Portfolio-Desktop-Version/o',
+  },
+  {
+    id: 4,
+    name: 'Multi-Post Stories',
+    company: 'Canopy',
+    position: 'Back End Dev',
+    year: '2022',
+    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    featuredImage: 'multi-post2.png',
+    technologies: ['html', 'css', 'javaScript'],
+    liveVersion: 'https://eugeneiyukhun.github.io/',
+    source: 'https://github.com/Eugeneiyukhun/My-Portfolio-Desktop-Version/o',
+  },
+];
+
