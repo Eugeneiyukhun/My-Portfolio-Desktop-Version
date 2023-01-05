@@ -21,3 +21,59 @@ const closeMenu = () => {
 openBtn.addEventListener('click', openMenu);
 closeBtn.addEventListener('click', closeMenu);
 menuOption.addEventListener('click', closeMenu);
+// popup window
+
+const projects = [
+  {
+    id: 1,
+    name: 'Tonic',
+    company: 'Canopy',
+    position: 'Back End Dev',
+    year: '2022',
+    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    featuredImage: 'tonic1.png',
+    technologies: ['html', 'css', 'javaScript'],
+    liveVersion: 'https://eugeneiyukhun.github.io/',
+    source: 'https://eugeneiyukhun.github.io/My-Portfolio-Desktop-Version/',
+  },
+  {
+    id: 2,
+    name: 'Multi-Post Stories',
+    company: 'Canopy',
+    position: 'Back End Dev',
+    year: '2022',
+    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    featuredImage: 'multi-post1.png',
+    technologies: ['html', 'css', 'javaScript'],
+    liveVersion: 'https://eugeneiyukhun.github.io/',
+    source: 'https://eugeneiyukhun.github.io/My-Portfolio-Desktop-Version/',
+  },
+  {
+    id: 3,
+    name: 'Tonic',
+    company: 'Canopy',
+    position: 'Back End Dev',
+    year: '2022',
+    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    featuredImage: 'tonic2.png',
+    technologies: ['html', 'css', 'javaScript'],
+    liveVersion: 'https://eugeneiyukhun.github.io/',
+    source: 'https://eugeneiyukhun.github.io/My-Portfolio-Desktop-Version/',
+  },
+  {
+    id: 4,
+    name: 'Multi-Post Stories',
+    company: 'Canopy',
+    position: 'Back End Dev',
+    year: '2022',
+    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    featuredImage: 'multi-post2.png',
+    technologies: ['html', 'css', 'javaScript'],
+    liveVersion: 'https://eugeneiyukhun.github.io/',
+    source: 'https://eugeneiyukhun.github.io/My-Portfolio-Desktop-Version/',
+  },
+];
