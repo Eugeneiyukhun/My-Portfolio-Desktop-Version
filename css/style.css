@@ -481,6 +481,7 @@ textarea {
   background-color: rgba(193, 199, 208, 0.85);
   backdrop-filter: blur(5px);
   padding: 28px 16px;
+  overflow: auto;
 }
 
 .modal__wrapper {
@@ -504,6 +505,7 @@ textarea {
   flex-direction: column;
   gap: 10px;
   overflow-y: auto;
+  height: 100%;
 }
 
 .modal__content > .work-card_title {
@@ -577,7 +579,7 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 142px 260px;
+    padding: 142px 100px;
     gap: 12px;
   }
 
@@ -682,12 +684,12 @@ textarea {
   }
 
   .modal {
-    padding: 77px 192px;
+    padding: 20px;
   }
 
   .modal__close {
-    right: 230px;
-    top: 100px;
+    top: 15px;
+    right: 30px;
   }
 
   .modal__content > .work-card_picture {
@@ -702,7 +704,6 @@ textarea {
 
   .modal_description {
     flex-direction: row;
-    padding-top: 60px;
   }
 
   .modal_description > .work-card_description {
@@ -715,4 +716,6 @@ textarea {
   .modal__footer {
     width: 320px;
   }
+
+
 }
