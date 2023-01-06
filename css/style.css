@@ -319,6 +319,7 @@ textarea {
   display: flex;
   flex-direction: column;
 }
+
 /* end */
 
 .about-myself {
@@ -394,6 +395,11 @@ textarea {
   border: none;
 }
 
+.mobile-menu__close > img {
+  cursor: pointer;
+  user-select: none;
+}
+
 .expanded > .about-myself_menu-item > img {
   rotate: 90deg;
 }
@@ -466,11 +472,6 @@ textarea {
   padding: 20px 30px;
 }
 
-.mobile-menu__close > img {
-  cursor: pointer;
-  user-select: none;
-}
-
 .modal {
   position: fixed;
   top: 0;
@@ -518,14 +519,6 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-
-.expanded > .about-myself_menu-item {
-  border: none;
-}
-
-.expanded > .about-myself_menu-item > img {
-  rotate: 90deg;
 }
 
 .hidden {
@@ -688,7 +681,6 @@ textarea {
     font-weight: 500;
   }
 
-  
   .modal {
     padding: 77px 192px;
   }
