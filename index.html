@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/menu.js" defer></script>
   <script src="js/modal.js" defer></script>
+  <script src="js/form_validation.js" defer></script>
 </head>
 <body>
     <main>
@@ -20,7 +21,6 @@
             <div>Contact</div>
           </div>
         </nav>
-       
       </header>
       <!-- headline container -->
       <section class="headline generic-container" id="headline">
@@ -54,111 +54,7 @@
       </section>
        <!-- My Portfolio Section -->
       <section class="works-wrapper" id="works-wrapper">
-        <!-- <article class="work-card">
-          <div class="work-card_picture">
-            <img src="./img/Posts/tonic1.png" alt="Tonic" alt=""/>
-          </div>
-          <div  class="work-card_elements">
-            <h3 class="work-card_title">Tonic</h3>
-            <div class="work-card_specs">
-              <div class="specs_client">Canopy</div>
-              <div class="dot"></div>
-              <div class="specs_role">Back End Dev</div>
-              <div class="dot"></div>
-              <div class="specs_year">2022</div>
-            </div>
-            <p class="work-card_description">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <ul class="work-card_techs">
-              <li class="tag">html</li>
-              <li class="tag">css</li>
-              <li class="tag">javaScript</li>
-            </ul>
-            <button class="work-card_button project-1" >See Project</button>
-          </div>
-        </article>
-
-        <article class="work-card">
-          <div class="work-card_picture">
-            <img src="./img/Posts/multi-post1.png" alt="" />
-          </div>
-          <div  class="work-card_elements">
-            <h3 class="work-card_title">Multi-Post Stories</h3>
-            <div class="work-card_specs">
-              <div class="specs_client">Canopy</div>
-              <div class="dot"></div>
-              <div class="specs_role">Back End Dev</div>
-              <div class="dot"></div>
-              <div class="specs_year">2022</div>
-            </div>
-            <p class="work-card_description">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <ul class="work-card_techs">
-              <li class="tag">html</li>
-              <li class="tag">css</li>
-              <li class="tag">javaScript</li>
-            </ul>
-            <button class="work-card_button project-2">See Project</button>
-          </div>
-        </article>
-
-        <article class="work-card">
-          <div class="work-card_picture">
-            <img src="./img/Posts/tonic2.png" alt="" />
-          </div>
-          <div  class="work-card_elements">
-            <h3 class="work-card_title">Tonic</h3>
-            <div class="work-card_specs">
-              <div class="specs_client">Canopy</div>
-              <div class="dot"></div>
-              <div class="specs_role">Back End Dev</div>
-              <div class="dot"></div>
-              <div class="specs_year">2022</div>
-            </div>
-            <p class="work-card_description">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <ul class="work-card_techs">
-              <li class="tag">html</li>
-              <li class="tag">css</li>
-              <li class="tag">javaScript</li>
-            </ul>
-            <button class="work-card_button project-3">See Project</button>
-          </div>
-        </article>
-
-        <article class="work-card">
-          <div class="work-card_picture">
-            <img src="./img/Posts/multi-post2.png" alt="" />
-          </div>
-          <div  class="work-card_elements">
-            <h3 class="work-card_title">Multi-Post Stories</h3>
-            <div class="work-card_specs">
-              <div class="specs_client">Canopy</div>
-              <div class="dot"></div>
-              <div class="specs_role">Back End Dev</div>
-              <div class="dot"></div>
-              <div class="specs_year">2022</div>
-            </div>
-            <p class="work-card_description">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <ul class="work-card_techs">
-              <li class="tag">html</li>
-              <li class="tag">css</li>
-              <li class="tag">javaScript</li>
-            </ul>
-            <button class="work-card_button project-4">See Project</button>
-          </div>
-        </article> -->
       </section>
-
 
        <!-- About Section -->
       <section class="about-myself generic-container" id="about-myself">
@@ -242,35 +138,21 @@
           </p>
           
           <form
-            class="contact_form__form"
-            action="https://formspree.io/f/mbjbnawr"
-            method="POST"
-          >
-            <input
-              type="text"
-              name="name"
-              maxlength="30"
-              placeholder="Your name"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              required
-              placeholder="Your e-mail"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-            />
-            <textarea
-              name="message"
-              maxlength="500"
-              required
-              placeholder="Write your message here"
-            ></textarea>
+            class="contact_form__form" action="https://formspree.io/f/mbjbnawr" method="POST" id="form">
+          <label for="name" class="form-label"></label>
+            <input type="text" name="name" maxlength="30" placeholder="Your name" required class="fiels-data"/>
+            
+          <label for="email" class="form-label"></label>
+          <input type="email" name="email" required placeholder="Your e-mail" class="field-data" />
+
+          <label for="message" class="form-label"></label>
+            <textarea name="message" maxlength="500" required placeholder="Write your message here" class="field-data"></textarea>
+
+            <div class="error-message">
+              <span id="error-message" class="hidden">Testing error message.</span>
+            </div>
 
             <button>Get in Touch</button>
-            <div class="contact-form__black-bar">
-                <div></div>
-            </div>
           </form>
         </div>
       </section>
