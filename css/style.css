@@ -208,7 +208,7 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 16px 16px 0 16px;
+  padding: 16px;
   gap: 12px;
   transition: all 1.1s;
 }
@@ -239,11 +239,22 @@ textarea {
 }
 
 .work-card_button {
-  margin: 12px 0;
+  border: 1px solid var(--purple);
+  border-radius: 5px;
+  padding: 4px 9px;
+  text-transform: initial;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2px;
+}
+
+.work-card_button img {
+  padding: 0 2px;
 }
 
 .work-card_specs {
-  width: 100%;
+  width: 95%;
   display: flex;
   align-items: center;
   font-weight: 600;
@@ -272,18 +283,24 @@ textarea {
 .work-card_description {
   font-size: 15px;
   line-height: 24px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.work-card_description p {
+  width: 60%;
 }
 
 .work-card_techs {
   display: flex;
-  width: 100%;
-  column-gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 20px;
 }
 
 .tag {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   padding: 4px 12px;
   background: var(--tag-background);
   border-radius: 8px;
@@ -292,6 +309,18 @@ textarea {
   color: var(--tag-color);
   letter-spacing: 0.03em;
 }
+
+.featured-img {
+  width: 100%;
+}
+
+.tech-wrapper {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* end */
 
 .about-myself {
   border-top-right-radius: 70px;
@@ -366,6 +395,11 @@ textarea {
   border: none;
 }
 
+.mobile-menu__close > img {
+  cursor: pointer;
+  user-select: none;
+}
+
 .expanded > .about-myself_menu-item > img {
   rotate: 90deg;
 }
@@ -386,7 +420,7 @@ textarea {
   background-position: top 40px right;
 }
 
-.contant-form__header {
+.contact-form__header {
   font-size: 40px;
   line-height: 52px;
   color: var(--white);
@@ -407,56 +441,90 @@ textarea {
 }
 
 .mobile-menu {
-  display: none;
-  background-color: #6070ff;
-  height: 100vh;
-  width: 100%;
-  opacity: 0.95;
-  z-index: 1;
-  position: absolute;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(96, 112, 255, 0.85);
+  backdrop-filter: blur(5px);
 }
 
-.close-btn {
-  text-align: right;
-  font-size: 30px;
-  color: #fff;
-  margin-right: 38px;
-  margin-top: 30px;
+.mobile-menu ul {
+  padding: 28px;
 }
 
-.menu-option {
+.mobile-menu li {
+  margin-bottom: 20px;
+}
+
+.mobile-menu a {
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--white);
+  cursor: pointer;
+  user-select: none;
+}
+
+.mobile-menu__close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 30px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(193, 199, 208, 0.85);
+  backdrop-filter: blur(5px);
+  padding: 28px 16px;
+  overflow: auto;
+}
+
+.modal__wrapper {
+  height: 100%;
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.modal__close {
+  position: absolute;
+  right: 40px;
+  top: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.modal__content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 23.95%;
-  margin-left: 28px;
+  gap: 10px;
+  overflow-y: auto;
+  height: 100%;
 }
 
-.menu-option li a {
-  font-weight: 600;
-  font-size: 32px;
-  color: #fff;
-  transition: font-size 0.5s;
+.modal__content > .work-card_title {
+  font-size: 28px;
 }
 
-.menu-option li a:hover {
-  font-size: 2.2rem;
+.modal__footer__buttons {
+  display: flex;
+  gap: 20px;
 }
 
-.overlay {
-  width: 35%;
-  height: 2px;
-  border: 2px solid;
-  transform: translate(50vh, 50vh);
+.modal_description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.no-scroll {
-  overflow: hidden;
-}
-
-.blur {
-  filter: blur(7.5px);
+.hidden {
+  display: none;
 }
 
 @media screen and (min-width: 800px) {
@@ -511,7 +579,7 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 142px 260px;
+    padding: 142px 100px;
     gap: 12px;
   }
 
@@ -559,6 +627,7 @@ textarea {
 
   .work-card_description {
     font-size: 16px;
+    margin-top: 25px;
   }
 
   .about-myself {
@@ -612,5 +681,39 @@ textarea {
 
   .specs_client {
     font-weight: 500;
+  }
+
+  .modal {
+    padding: 20px;
+  }
+
+  .modal__close {
+    top: 15px;
+    right: 30px;
+  }
+
+  .modal__content > .work-card_picture {
+    height: 400px;
+    width: 100%;
+  }
+
+  .modal__content > .work-card_picture > img {
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .modal_description {
+    flex-direction: row;
+  }
+
+  .modal_description > .work-card_description {
+    width: calc(100% - 330px);
+    padding-right: 15px;
+    overflow-y: auto;
+    max-height: 150px;
+  }
+
+  .modal__footer {
+    width: 320px;
   }
 }

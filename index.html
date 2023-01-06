@@ -6,13 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio Desktop Version</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/menu.js" defer></script>
+  <script src="js/modal.js" defer></script>
 </head>
 <body>
     <main>
       <header>
         <div class="header-logo">Eugene Iyukhun</div>
         <nav>
-          <div class="header-menu-button">
+          <div class="header-menu-button" id="hamburger">
             <div>Portfolio</div>
             <div>About</div>
             <div>Contact</div>
@@ -20,16 +22,8 @@
         </nav>
        
       </header>
-      <nav class="mobile-menu">
-        <div class="close-btn">&times;</div>
-        <ul class="menu-option">
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="overlay"></div>
-      </nav>
-      <section class="headline generic-container">
+      <!-- headline container -->
+      <section class="headline generic-container" id="headline">
         <h1 class="generic_title">I’m Eugene Glad to see you!</h1>
         <p>
           I’m a software developer! I can help you build a product , feature or
@@ -59,8 +53,8 @@
         </ul>
       </section>
        <!-- My Portfolio Section -->
-      <section class="works-wrapper" id="portfolio">
-        <article class="work-card">
+      <section class="works-wrapper" id="works-wrapper">
+        <!-- <article class="work-card">
           <div class="work-card_picture">
             <img src="./img/Posts/tonic1.png" alt="Tonic" alt=""/>
           </div>
@@ -71,7 +65,7 @@
               <div class="dot"></div>
               <div class="specs_role">Back End Dev</div>
               <div class="dot"></div>
-              <div class="specs_year">2015</div>
+              <div class="specs_year">2022</div>
             </div>
             <p class="work-card_description">
               A daily selection of privately personalized reads; no accounts or
@@ -82,7 +76,7 @@
               <li class="tag">css</li>
               <li class="tag">javaScript</li>
             </ul>
-            <button class="work-card_button">See Project</button>
+            <button class="work-card_button project-1" >See Project</button>
           </div>
         </article>
 
@@ -108,7 +102,7 @@
               <li class="tag">css</li>
               <li class="tag">javaScript</li>
             </ul>
-            <button class="work-card_button">See Project</button>
+            <button class="work-card_button project-2">See Project</button>
           </div>
         </article>
 
@@ -134,7 +128,7 @@
               <li class="tag">css</li>
               <li class="tag">javaScript</li>
             </ul>
-            <button class="work-card_button">See Project</button>
+            <button class="work-card_button project-3">See Project</button>
           </div>
         </article>
 
@@ -160,14 +154,14 @@
               <li class="tag">css</li>
               <li class="tag">javaScript</li>
             </ul>
-            <button class="work-card_button">See Project</button>
+            <button class="work-card_button project-4">See Project</button>
           </div>
-        </article>
+        </article> -->
       </section>
 
 
        <!-- About Section -->
-      <section class="about-myself generic-container" id="about">
+      <section class="about-myself generic-container" id="about-myself">
         <div class="about-myself_elements">
           <h2 class="generic_title">About Myself</h2>
           <p>
@@ -237,17 +231,16 @@
           </li>
         </ul>
       </section>
-
-      <section class="contact-form">
+       <!-- My form section -->
+      <section class="contact-form" id="contact-form">
         <div class="contact-form__wrapper">
-          <h2 class="contant-form__header" id="contact">Contact me</h2>
+          <h2 class="contact-form__header">Contact me</h2>
           <p class="contact_form__paragraph">
             If you have an application you are interested in developing, a
             feature that you need built or a project that needs coding. I’d love
             to help with it
           </p>
           
-           <!-- My form section -->
           <form
             class="contact_form__form"
             action="https://formspree.io/f/mbjbnawr"
@@ -281,7 +274,25 @@
           </form>
         </div>
       </section>
+      
+      <section class="mobile-menu hidden" id="mobile-menu">
+        <div class="mobile-menu__close">
+          <img src="img/close-icon.png" id="close-img">
+        </div>
+        <ul>
+          <li><a href="#works-wrapper">Portfolio</a></li>
+          <li><a href="#about-myself">About</a></li>
+          <li><a href="#contact-form">Contact</a></li>
+        </ul>
+      </section>
+  
+      <section class="modal hidden" id="modal">
+        <div class="modal__wrapper">
+          <div class="modal__close" id="close-modal"><img src="img/dark-close-icon.svg"></div>
+          <div class="modal__content" id="modal-content">
+          </div>
+        </div>
+      </section>
     </main>
 </body>
-<script src="main.js"></script>
 </html>

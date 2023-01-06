@@ -8,17 +8,23 @@ Building Portfolio Desktop Version using HTML, CSS and Linters
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Usage](#usage)
-- [👥 Author](#author)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
+- [My-Portfolio-Desktop-Version](#my-portfolio-desktop-version)
+- [Portfolio-Desktop-Version](#portfolio-desktop-version)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Eugene Eyukhun Portfolio ](#-eugene-eyukhun-portfolio-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Usage](#usage)
+  - [👥 Author ](#-author-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
 
 # 📖 Eugene Eyukhun Portfolio <a name="about-project"></a>
@@ -54,7 +60,13 @@ Building Portfolio Desktop Version using HTML, CSS and Linters
 
 To get a local copy up and running, follow these steps.
 
+### Prerequisites
 
+In order to run this project you need:
+
+- A computer.
+- Internet access.
+- A modern web browser.
 
 ### Setup
 
@@ -73,6 +85,7 @@ To run the project, open index.html in your web browser.
 - GitHub: [Eugene Iyukhun](https://github.com/Eugeneiyukhun)
 - LinkedIn: [Eugene Iyukhun](https://www.linkedin.com/in/eugene-iyukhun-bb491612a)
 - Twitter: [Eugene Iyukhun](https://twitter.com/EIyukhun)
+  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
@@ -108,7 +121,7 @@ If you like this project, please, share it with your friends.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank to all my Mricronauts partners...
+I would like to thank all my Mricronauts partners...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
