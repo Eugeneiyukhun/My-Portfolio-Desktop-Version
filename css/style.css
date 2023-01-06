@@ -191,42 +191,6 @@ textarea {
   padding: 20px 0;
 }
 
-/* Start of project details */
-aside {
-  display: block;
-}
-
-.project-details_technology {
-  display: flex;
-  width: 95%;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-}
-
-.close-project {
-  display: flex;
-  align-self: flex-end;
-  color: #67798f;
-  font-size: 2rem;
-}
-
-.project-detail_description {
-  display: flex;
-  width: 90%;
-  align-self: flex-end;
-}
-.work-card_description {
-  display: flex;
-}
-
-.access-link {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 20px;
-  flex-wrap: wrap;
-}
-
 .works-wrapper {
   display: grid;
   grid-template: repeat(4, 1fr) / 1fr;
@@ -449,7 +413,7 @@ aside {
   background-position: top 40px right;
 }
 
-.contant-form__header {
+.contact-form__header {
   font-size: 40px;
   line-height: 52px;
   color: var(--white);
@@ -469,61 +433,104 @@ aside {
   margin-top: 32px;
 }
 
-/* Building a mobile-menu for JavaScript design */
 .mobile-menu {
-  display: none;
-  background-color: #6070ff;
-  height: 100vh;
-  width: 100%;
-  opacity: 0.95;
-  z-index: 1;
-  position: absolute;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(96, 112, 255, 0.85);
+  backdrop-filter: blur(5px);
 }
 
-.close-btn {
-  text-align: right;
-  font-size: 30px;
-  color: #fff;
-  margin-right: 38px;
-  margin-top: 30px;
+.mobile-menu ul {
+  padding: 28px;
 }
 
-.menu-option {
+.mobile-menu li {
+  margin-bottom: 20px;
+}
+
+.mobile-menu a {
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--white);
+  cursor: pointer;
+  user-select: none;
+}
+
+.mobile-menu__close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 30px;
+}
+
+.mobile-menu__close > img {
+  cursor: pointer;
+  user-select: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(193, 199, 208, 0.85);
+  backdrop-filter: blur(5px);
+  padding: 28px 16px;
+}
+
+.modal__wrapper {
+  height: 100%;
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.modal__close {
+  position: absolute;
+  right: 40px;
+  top: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.modal__content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 23.95%;
-  margin-left: 28px;
+  gap: 10px;
+  overflow-y: auto;
 }
 
-.menu-option li a {
-  font-weight: 600;
-  font-size: 32px;
-  color: #fff;
-  transition: font-size 0.5s;
+.modal__content > .work-card_title {
+  font-size: 28px;
 }
 
-.menu-option li a:hover {
-  font-size: 2.2rem;
+.modal__footer__buttons {
+  display: flex;
+  gap: 20px;
 }
 
-.overlay {
-  width: 35%;
-  height: 2px;
-  border: 2px solid;
-  transform: translate(50vh, 50vh);
+.modal_description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.no-scroll {
-  overflow: hidden;
+.expanded > .about-myself_menu-item {
+  border: none;
 }
 
-.blur {
-  filter: blur(7.5px);
+.expanded > .about-myself_menu-item > img {
+  rotate: 90deg;
 }
 
-/* Completed styling of mobile-menu for JavaScript design */
+.hidden {
+  display: none;
+}
+
 @media screen and (min-width: 800px) {
   body {
     font-size: 20px;
@@ -677,5 +684,41 @@ aside {
 
   .specs_client {
     font-weight: 500;
+  }
+
+  
+  .modal {
+    padding: 77px 192px;
+  }
+
+  .modal__close {
+    right: 230px;
+    top: 100px;
+  }
+
+  .modal__content > .work-card_picture {
+    height: 400px;
+    width: 100%;
+  }
+
+  .modal__content > .work-card_picture > img {
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .modal_description {
+    flex-direction: row;
+    padding-top: 60px;
+  }
+
+  .modal_description > .work-card_description {
+    width: calc(100% - 330px);
+    padding-right: 15px;
+    overflow-y: auto;
+    max-height: 150px;
+  }
+
+  .modal__footer {
+    width: 320px;
   }
 }
