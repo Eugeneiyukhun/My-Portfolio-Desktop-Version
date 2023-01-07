@@ -11,5 +11,5 @@ hamburger.addEventListener('click', toggleMenu);
 closeMenu.addEventListener('click', toggleMenu);
 
 menuLinks.forEach((link) => {
-  link.addEventListener('click', toggleMenu);
+ 
 });
